@@ -1,0 +1,6 @@
+	1. java.net.MalformedURLException: no protocol:
+  There is an empty url passed to the method URL url = new URL(url). 
+  If url is not empty, URL url = new URL("qqqq"), exception should be 
+  java.net.MalformedURLException: no protocol: qqqq
+  
+  2. javax.imageio.IIOException: Can't get input stream from URL!
