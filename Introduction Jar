@@ -1,15 +1,21 @@
 1.	https://docs.oracle.com/javase/tutorial/deployment/jar/build.html
+
 2.	create JAR File: jar cf jar-file input-file(s)
 input-files argument can contain the wildcard * symbol. If contents of those directories, the contents of the directories are added to the JAR achieve recursively.
+
 3.	Default Manifest (must be UTF8):
 Manifest-Version:1.0
 Created-By: 1.7.0_06
 Main-Class: classname (optional)
+
 4.	Manifest default path: META-INF/MANIFEST.MF
+
 5.	Modifying a Manifest File: jar cfm jar-file manifest-addition input-files
 The manifest must end with a new line or carriage return.
 manifest-addition contains entries: HeaderName:Value
+
 6.	Run the program in jar: java –jar jar-file
+
 7.	Adding Classes to the JAR Files’ Classpath.
 Class-Path:jar1-name jar2-name directory-name/jar3-name
 jar1-name should on the local network. 
