@@ -13,3 +13,19 @@ Task由Gradle插件支持
 4. 生命周期
 初始化－－－－－－-------------－>配置－－－－－－－------->执行
 执行settings.gradle            解析build.gradle        执行task
+
+5. jar, 来自于java plugin
+jar {
+    String someString = ''
+    configurations.runtime.each {
+        someString = someString + " lib/" + it.name
+//        println someString
+    }
+    manifest {
+        attributes 'Main-Class': 'zy.TestProcessor'
+        attributes 'Class-Path': someString
+        attributes("Implementation-Title": "spoon",
+                "Implementation-Version": "1")
+    }
+    exclude(['zy/**'])
+}
