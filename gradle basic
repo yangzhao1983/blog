@@ -1,0 +1,15 @@
+1. http://www.open-open.com/lib/view/open1447139848053.html
+
+2. 配置脚本类型<＝＝＝>关联对象类型
+Build Script: Project
+Init Script: Gradle  初始化脚本 USER_HOME/.gradle
+Setings: scriptSettings 设置脚本 
+
+3. 每个build.gradle 对应一个Project对象。
+Project，Task，Gradle插件
+Project包含一系列Task，
+Task由Gradle插件支持
+
+4. 生命周期
+初始化－－－－－－-------------－>配置－－－－－－－------->执行
+执行settings.gradle            解析build.gradle        执行task
