@@ -29,3 +29,6 @@ jar {
     }
     exclude(['zy/**'])
 }
+
+6. gradle+jar
+https://my.oschina.net/u/2505383/blog/677301
