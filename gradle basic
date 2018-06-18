@@ -14,7 +14,7 @@ Task由Gradle插件支持
 初始化－－－－－－-------------－>配置－－－－－－－------->执行
 执行settings.gradle            解析build.gradle        执行task
 
-5. jar, 来自于java plugin
+5. jar, 来自于java plugin，默认为 task build的一部分
 jar {
     String someString = ''
     configurations.runtime.each {
