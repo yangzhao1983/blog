@@ -2,3 +2,6 @@
 2. 然后是宝管理工具，Homebrew $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 3. $ brew install python. 同时安装pip
 4. Pipenv？
+
+
+http://pythonguidecn.readthedocs.io/zh/latest/starting/install3/osx.html
