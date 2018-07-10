@@ -1,0 +1,4 @@
+1. 在正式安装之前，应先安装C编译器。最快的方式是运行 xcode-select --install 来安装Xcode命令行工具。
+2. 然后是宝管理工具，Homebrew $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+3. $ brew install python. 同时安装pip
+4. Pipenv？
