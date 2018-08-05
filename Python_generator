@@ -1,0 +1,7 @@
+Generator is a great feature in Python, expectially in 3.X.
+It is similiar to list comprehension. Difference is that, for Generator, parentheses('()') are used; while, for list comprehension, square brackets("[]") are used. 
+
+Generator return one object at one time. Trade performance for space.
+
+Object created by Generator implements iterator protocal, in other word, it provide methods that can be used in iterator contexts, such as iter(), next() and so on.
+
