@@ -5,3 +5,6 @@ Generator return one object at one time. Trade performance for space.
 
 Object created by Generator implements iterator protocal, in other word, it provide methods that can be used in iterator contexts, such as iter(), next() and so on.
 
+Do not abuse it. 
+
+Explicit is better than implicit.
