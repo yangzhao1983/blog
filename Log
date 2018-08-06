@@ -1,0 +1,10 @@
+1. Log4j
+It can be used to output log to files intead of console, which can be used later.
+LogManager: is used to create Logger.
+LoggerContext: Anchor point of Loggin system. Corresponding to configuration/
+Logger: Object used in code to out put log.
+LoggerConfig: identified by name (often class name), contains the configuration info of a logger, such as appender, filter...
+Appenders:Where the log is output.
+LogEvents
+Logger Hierarchy,Named Hierarchy: Logger (LoggerConfig) is identified by name, and the hierarchy relationship between the names decides the hierarchy relationship between the Loggers.
+Filters: Decides which logEvent can be sent to appender
