@@ -8,3 +8,8 @@ Appenders:Where the log is output.
 LogEvents
 Logger Hierarchy,Named Hierarchy: Logger (LoggerConfig) is identified by name, and the hierarchy relationship between the names decides the hierarchy relationship between the Loggers.
 Filters: Decides which logEvent can be sent to appender
+PatternLayout: The format of the the log.
+
+Configuration can be loaded by two ways:
+Parsing property files. log4j2.xml on the classpath. Order can be found here: https://logging.apache.org/log4j/2.x/manual/configuration.html
+Programmatically.
