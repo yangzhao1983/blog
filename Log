@@ -13,3 +13,5 @@ PatternLayout: The format of the the log.
 Configuration can be loaded by two ways:
 Parsing property files. log4j2.xml on the classpath. Order can be found here: https://logging.apache.org/log4j/2.x/manual/configuration.html
 Programmatically.
+
+Default config file in src/main/resource
