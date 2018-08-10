@@ -5,4 +5,18 @@ b. code directory
 It can be considered as an object representing the VM. Where class path is used to run the code in code directory.
 From a launcher, we can get a manager managing the "Code Model", and it will provide context in which the AST model can be created and maintained.
 
-2. 
+2. CtAbstractInvocation
+In package:spoon.reflect.code, it contains the meta-model part that models the executable code.(methods and constructors' bodies, field initializers)
+
+CtAbstractInvocation represents abstract invocation of a CtExecutable. 
+
+CtExecutable represents an executable element such as method, constructor, or an anonymous block.
+
+3. Spoon meta Model
+a. Structural part: declarations of the program element.
+b. Code Part. Exectutable Java Code in method bodies.
+c. Reference part.
+
+4. CtReference
+reference to a CtExecutable. Can be CtMethod or a CtConstructor
+
