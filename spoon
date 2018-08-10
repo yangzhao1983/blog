@@ -1,0 +1,8 @@
+1. Launcher.
+Initialized by 
+a. class path
+b. code directory
+It can be considered as an object representing the VM. Where class path is used to run the code in code directory.
+From a launcher, we can get a manager managing the "Code Model", and it will provide context in which the AST model can be created and maintained.
+
+2. 
