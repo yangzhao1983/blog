@@ -26,3 +26,10 @@ reference to a CtExecutable. Can be CtMethod or a CtConstructor
 
 5. CtVariableRead and CtFieldRead
 They are both from code. CtVariableRead is subclass of CtVariableRead. They both inherent from CtExpression.
+CtFiledRead.getVariable().getDeclaration(): the class where the Field is declared.
+CtFiledRead.getVariable() returns the CtField Ref, which can be used to get the QualifiedName: package.subPackage#fieldName
+
+6. CtFieldRef
+getDeclaration return CtFieldRef
+CtFieldRef.getDeclaringType will return the literal code of the class where the CtFiled is declared.
+
