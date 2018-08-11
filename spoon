@@ -23,3 +23,6 @@ c. Reference part.
 
 4. CtReference
 reference to a CtExecutable. Can be CtMethod or a CtConstructor
+
+5. CtVariableRead and CtFieldRead
+They are both from code. CtVariableRead is subclass of CtVariableRead. They both inherent from CtExpression.
