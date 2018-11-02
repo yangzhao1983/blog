@@ -1,1 +1,2 @@
 1. Mac 下安装module sudo easy_install cx_Oracle
+2. Homebrew installs the stuff you need that Apple didn’t.
