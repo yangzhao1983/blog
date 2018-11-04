@@ -18,8 +18,13 @@ Bridge又有两种形式：
 在生产环境中，一般采用后者。
 可以通过将container端口映射到host端口的形式发布container的端口。
 2. 不同hosts，有两种形式
-overlap
+overlap ingress+docker_gwbridge 
+他在本质上还是一个local的bridge网络，但是他是我们实现多个host之间的container通信的基础。通常情况下，当我们在链接swarm nodes的时候，docker_gwbridge网络就会被在每一个swarm节点上自动创建出来。
+"an overlay network called ingress, which handles control and data traffic related to swarm services. When you create a swarm service and do not connect it to a user-defined overlay network, it connects to the ingress network by default.
+a bridge network called docker_gwbridge, which connects the individual Docker daemon to the other daemons participating in the swarm." 
+
 通过OS层的设置
 
 Reference:
 https://docs.docker.com/network/
+https://docs.docker.com/network/network-tutorial-overlay/#use-an-overlay-network-for-standalone-containers
