@@ -1,0 +1,17 @@
+Docker Network 有一下几种形式：
+1. None
+2. Host
+3. Overlap
+4. Bridge
+5. Container
+6. MacVlan
+
+在项目中，用的是Bridge。Bridge顾名思义，网桥，工作于数据链路层，是一个虚拟的二层交换机。在网桥内，有一个表，存储着MAC地址和IP地址间的映射。同时，网桥还可以对传输数据进行校验（三层router，主要用于不同网路之间的通讯，如以太网和ATM网，以IP为操作对象；一层集线器，用于信号加强，以广播的形式传递数据） Bridge又有两种形式：
+1. 同一个host
+默认的Bridge是Docker0，连接到docker0上的各个container之间只能以IP互相通讯；还可以建立个性化的bridge，各个container之间可以通过IP和containerID进行通讯。在生产环境中，一般采用后者。
+2. 不同hosts
+overlap
+
+
+Reference:
+https://docs.docker.com/network/
