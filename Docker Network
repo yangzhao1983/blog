@@ -1,4 +1,4 @@
-#Docker Network 有一下几种形式：
+# Docker Network 有一下几种形式：
 1. None
 2. Host
 3. Overlap
