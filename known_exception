@@ -1,0 +1,11 @@
+1. IOException
+2. MalformedURLException
+3. DatatypeConfigurationException, SAXException, ParserConfigurationException 解析XML
+4. JSONException
+5. InterruptedException
+6. Filenotfound
+7. MessagingExecption javax.mail
+8. unknownHostException, NamingException. IP, ldap
+9. NoAlertPresentException, InvalidElementStateException, StaleElementReferenceException(after refresh page), WebDriverException, NoSuchElementException Webdriver
+10. AWTException, AWT
+11. CerificateException
