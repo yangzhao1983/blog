@@ -18,3 +18,8 @@ Self是约定，不一定非要用“self”。
 “覆盖”是指重新定义类/父类中的方法。
 
 和Java区别，多重继承。“扩展”最好不要用“super”，而要明确指定类的名字。没有this，只用self。
+
+introspection Method：
+object.__dict__
+object.__class__
+object.__class__.__name__
