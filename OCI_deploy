@@ -2,4 +2,7 @@
 Docker Cloud maintains a Command Line Interface (CLI) tool that you can use to interact with the service. 
 
 2. Docker registry
-The Docker Registry HTTP API is the protocol to facilitate distribution of images to the docker engine. It interacts with instances of the docker registry, which is a service to manage information about docker images and enable their distribution.
+The Docker Registry HTTP API is the protocol to facilitate distribution of images to the docker engine. 
+It interacts with instances of the docker registry, 
+which is a service to manage information about docker images and enable their distribution.
+Docker Registry 协议 v2 是 Docker 工具集用于在注册表和用户之间推送和拉取镜像的协议。
