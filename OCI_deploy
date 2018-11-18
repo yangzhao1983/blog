@@ -26,7 +26,10 @@ Resouce: object u create in OCI, including computer resources, block storage vol
 IAM use traditional identity concepts, such as principal, groups, policies.
 
 OCI IAM introduce new concept: compartment (in the tenancy)
-API Signing key is required when using OCI API in conjunction with the SDK/CLI
+API Signing key is required when using OCI API in conjunction with the SDK(Java SDK, python SDK, go SDK..)/
+CLI(The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks)
+
+Terraform?
 
 tag and tag name space
  
