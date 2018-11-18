@@ -11,5 +11,8 @@ Docker Registry 协议 v2 是 Docker 工具集用于在注册表和用户之间�
 Step 1: Setup OCI IDCS Deployer container
 docker login, login to docker cloud.
 Docker Cloud 是caas（Container as a Service）容器即服务，caas是在paas之上的。
+Docker Cloud，Docker在2015年11月收购了tutum.co在2018年2月份推出了Docker Cloud，它基本上提供了Docker自身原生的一个编排的API。
+
+
 
 
