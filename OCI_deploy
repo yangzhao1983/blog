@@ -13,6 +13,18 @@ docker login, login to docker cloud.
 Docker Cloud 是caas（Container as a Service）容器即服务，caas是在paas之上的。
 Docker Cloud，Docker在2015年11月收购了tutum.co在2018年2月份推出了Docker Cloud，它基本上提供了Docker自身原生的一个编排的API。
 
+Pull oci-deployer.
+
+ssh to Bastion host IP using opc user and opc key attached above
+ssh -i <key> opc@<bastion_ip>
+docker exec-it idcs-oci-deployer /bin/bash
+
+
+Step 2: Create infrastructure resources
+IAM service
+compartment and policies
+ OCI API
+
 
 
 
