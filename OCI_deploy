@@ -6,3 +6,10 @@ The Docker Registry HTTP API is the protocol to facilitate distribution of image
 It interacts with instances of the docker registry, 
 which is a service to manage information about docker images and enable their distribution.
 Docker Registry 协议 v2 是 Docker 工具集用于在注册表和用户之间推送和拉取镜像的协议。
+
+
+Step 1: Setup OCI IDCS Deployer container
+docker login, login to docker cloud.
+Docker Cloud 是caas（Container as a Service）容器即服务，caas是在paas之上的。
+
+
