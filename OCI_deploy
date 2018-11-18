@@ -21,9 +21,15 @@ docker exec-it idcs-oci-deployer /bin/bash
 
 
 Step 2: Create infrastructure resources
-IAM service
-compartment and policies
- OCI API
+IAM service: Identityand Access Management service, gate keeper, decide who an access OCI accout.
+Resouce: object u create in OCI, including computer resources, block storage volumes, Virtual cloud Networks.
+IAM use traditional identity concepts, such as principal, groups, policies.
+
+OCI IAM introduce new concept: compartment (in the tenancy)
+API Signing key is required when using OCI API in conjunction with the SDK/CLI
+
+tag and tag name space
+ 
 
 
 
