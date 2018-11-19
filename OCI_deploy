@@ -52,17 +52,40 @@ Every Oracle Cloud Infrastructure resource has an Oracle-assigned unique ID call
 It's included as part of the resource's information in both the Console and API
 ocid1.<RESOURCE TYPE>.<REALM>.[REGION][.FUTURE USE].<UNIQUE ID>
 
-Bucket:
-In the Oracle Cloud Infrastructure Object Storage service, a bucket is a container for storing objects in a compartment 
-within an Object Storage namespace.
-
 region:
 Oracle Cloud Infrastructure is hosted in regions and availability domains. 
 A region is a localized geographic area, and an availability domain is one or more data centers located within a region. 
 A region is composed of several availability domains. 
+Regions are completely independent of other regions and can be separated by vast distances—across countries or even continents.
+Generally, you would deploy an application in the region where it is most heavily used, since using nearby resources is faster than using distant resources. H
+https://docs.cloud.oracle.com/iaas/Content/General/Concepts/regions.htm
+
 
 Availability domains:
 Availability domains are isolated from each other, fault tolerant, and very unlikely to fail simultaneously. 
+All the availability domains in a region are connected to each other
+
+Tenancy:
+The root compartment that contains all of your organization's compartments and 
+other Oracle Cloud Infrastructure cloud resources.
+
+
+Availability domains VS Tenancy:
+Oracle Cloud Infrastructure uses tenancy-specific prefixes for the availability domain names
+
+Object Storage:
+Hot Storage VS cold storag
+Object Storage is a regional service and is not tied to any specific compute instance. 
+
+Object Storage resources:
+Each object is stored in a bucket.
+ 
+Bucket:
+In the Oracle Cloud Infrastructure Object Storage service, a bucket is a container for storing objects in a compartment 
+within an Object Storage namespace.
+A logical container for storing objects. 
+Users or systems create buckets as needed within a region. A bucket is associated with a single compartment 
+can be used for storing terraform state information
 
 tag and tag name space
  
