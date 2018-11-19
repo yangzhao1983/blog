@@ -105,3 +105,6 @@ Terraform automatically loads them to populate variables.
 
 bastion?
 
+Tenancy?
+Tenancy VS region
+
