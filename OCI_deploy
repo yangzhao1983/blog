@@ -25,6 +25,13 @@ IAM service: Identityand Access Management service, gate keeper, decide who an a
 Resouce: object u create in OCI, including computer resources, block storage volumes, Virtual cloud Networks.
 IAM use traditional identity concepts, such as principal, groups, policies.
 
+Group, user and principal are independent, they are global, not specific to a compartment
+
+policy is created within a given compartment.
+
+compartment:
+
+
 OCI IAM introduce new concept: compartment (in the tenancy, logical container used to organize and isolate related cloud resources)
 API Signing key is required when using OCI API in conjunction with the SDK(Java SDK, python SDK, go SDK..)/
 CLI(The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks)
@@ -102,7 +109,6 @@ the data can be read back using the native Object Storage API and vice versa.
 For all files which match terraform.tfvars or *.auto.tfvars present in the current directory, 
 Terraform automatically loads them to populate variables. 
 
-
 bastion?
 
 Tenancy?
@@ -112,3 +118,7 @@ Tenancy 对应一个帐户，可以是跨region的
 Group are for user principle
 Dynamic groups are for instance principle
 
+A terraform can be deployed for Instance (App?)
+
+Service limits:
+When you sign up for Oracle Cloud Infrastructure, a set of service limits are configured for your tenancy. 
