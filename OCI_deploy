@@ -107,4 +107,8 @@ bastion?
 
 Tenancy?
 Tenancy VS region
+Tenancy 对应一个帐户，可以是跨region的
+
+Group are for user principle
+Dynamic groups are for instance principle
 
