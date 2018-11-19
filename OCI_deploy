@@ -30,8 +30,6 @@ API Signing key is required when using OCI API in conjunction with the SDK(Java 
 CLI(The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks)
 There are SDK/CLI configure files.
 
-bucket?
-
 Terraform:Push approach,used for Provisioning app/service to IaaS.
 https://www.terraform.io/intro/index.html
 Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. 
@@ -88,7 +86,10 @@ Users or systems create buckets as needed within a region. A bucket is associate
 can be used for storing terraform state information
 
 tag and tag name space
- 
+
+NAMESPACE
+A logical entity that serves as a top-level container for all buckets and objects, 
+allowing you to control bucket naming within your tenancy. 
 
 
 
