@@ -25,13 +25,44 @@ IAM service: Identityand Access Management service, gate keeper, decide who an a
 Resouce: object u create in OCI, including computer resources, block storage volumes, Virtual cloud Networks.
 IAM use traditional identity concepts, such as principal, groups, policies.
 
-OCI IAM introduce new concept: compartment (in the tenancy)
+OCI IAM introduce new concept: compartment (in the tenancy, logical container used to organize and isolate related cloud resources)
 API Signing key is required when using OCI API in conjunction with the SDK(Java SDK, python SDK, go SDK..)/
 CLI(The CLI is a small footprint tool that you can use on its own or with the Console to complete Oracle Cloud Infrastructure tasks)
 There are SDK/CLI configure files.
 
 bucket?
-Terraform?
+
+Terraform:Push approach,used for Provisioning app/service to IaaS.
+https://www.terraform.io/intro/index.html
+Terraform is a tool for building, changing, and versioning infrastructure safely and efficiently. 
+The infrastructure Terraform can manage includes low-level components such as compute instances, storage, and networking, 
+as well as high-level components such as DNS entries, SaaS features, etc.
+
+Infrastructure as Code, in simple terms, is a means by which we can write declarative definitions for 
+the infrastructure we want to exist and using them with a provisioning tool that deals with the actual deployment. 
+This means that we can code what we want built, provide necessary credentials for the given IaaS provider, 
+kick off the provisioning process, pop the kettle on and come back to find all your services purring along nicely in the cloud… or a terminal screen full of ominous warnings about failed deployment and “unrecoverable state” and a deep sense of growing unease 
+
+Infrastructures:
+
+Terraform can be used with many cloud providers
+
+Oracle Cloud IDs (OCIDs):
+Every Oracle Cloud Infrastructure resource has an Oracle-assigned unique ID called an Oracle Cloud Identifier (OCID). 
+It's included as part of the resource's information in both the Console and API
+ocid1.<RESOURCE TYPE>.<REALM>.[REGION][.FUTURE USE].<UNIQUE ID>
+
+Bucket:
+In the Oracle Cloud Infrastructure Object Storage service, a bucket is a container for storing objects in a compartment 
+within an Object Storage namespace.
+
+region:
+Oracle Cloud Infrastructure is hosted in regions and availability domains. 
+A region is a localized geographic area, and an availability domain is one or more data centers located within a region. 
+A region is composed of several availability domains. 
+
+Availability domains:
+Availability domains are isolated from each other, fault tolerant, and very unlikely to fail simultaneously. 
 
 tag and tag name space
  
