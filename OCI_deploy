@@ -91,6 +91,17 @@ NAMESPACE
 A logical entity that serves as a top-level container for all buckets and objects, 
 allowing you to control bucket naming within your tenancy. 
 
+Customer Secret Keys: 
+For using the Amazon S3 Compatibility API with Object Storage. See Amazon S3 Compatibility API .
+Using the Amazon S3 Compatibility API, customers can continue to use their existing Amazon S3 tools (for example, SDK clients)
+and partners can make minimal changes to their applications to work with Object Storage. 
+The Amazon S3 Compatibility API and Object Storage data sets are congruent. 
+If data is written to the Object Storage using the Amazon S3 Compatibility API, 
+the data can be read back using the native Object Storage API and vice versa.
+
+For all files which match terraform.tfvars or *.auto.tfvars present in the current directory, 
+Terraform automatically loads them to populate variables. 
+
 
 
 
