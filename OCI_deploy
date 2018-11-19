@@ -122,3 +122,15 @@ A terraform can be deployed for Instance (App?)
 
 Service limits:
 When you sign up for Oracle Cloud Infrastructure, a set of service limits are configured for your tenancy. 
+
+
+Kub manage:
+helm: package manager for Kubernetes
+/scratch/oradev/idcs/bin/deployer/scripts/midtierInstall.sh
+./app/data/logs/deployment_logs/trace_log/install_20181117161357.log
+
+Charts:
+Helm uses a packaging format called charts. 
+A chart is a collection of files that describe a related set of Kubernetes resources. 
+A single chart might be used to deploy something simple, like a memcached pod, or something complex, 
+like a full web app stack with HTTP servers, databases, caches, and so on.
