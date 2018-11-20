@@ -6,5 +6,9 @@
 分类网络不需要子网掩码。
 
 
+无类别域间路由（Classless Inter-Domain Routing、CIDR）
+A.B.C.D/N
+N是掩码。代表网络位数。
+
 
 
