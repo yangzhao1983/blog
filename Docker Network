@@ -31,7 +31,60 @@ Reference:
 https://docs.docker.com/network/
 https://docs.docker.com/network/network-tutorial-overlay/#use-an-overlay-network-for-standalone-containers
 
-问题：
 Iptables nat表
+Iptabbles表，是一个防火墙命令工具，调用内核中的netfilter，没有守护进程，所以不能算是一个“服务”。
+主要涉及三个层面的概念：
+1. chain：可以理解为关卡。报文从网卡进入内核，到达用户空间，经过处理再进入内核，到达网卡，在这一旅程中的各个阶段，有各自的关卡。
+INPUT，OUTPUT，FORWARD等。每个关卡中都有一连串的rules。
+
+2. tables
+对不同功能的rules归类，就是表。
+====
+filter表
+filter表是默认的表，如果不指明表则使用此表。其通常用于过滤数据包。其中的内建链包括：
+
+INPUT，输入链。发往本机的数据包通过此链。
+OUTPUT，输出链。从本机发出的数据包通过此链。
+FORWARD，转发链。本机转发的数据包通过此链。
+=========
+nat表（Network address transform）
+nat表如其名，用于地址转换操作。其中的内建链包括：
+
+PREROUTING，路由前链，在处理路由规则前通过此链，通常用于目的地址转换（DNAT）。
+POSTROUTING，路由后链，完成路由规则后通过此链，通常用于源地址转换（SNAT）。
+OUTPUT，输出链，类似PREROUTING，但是处理本机发出的数据包。
+=============
+mangle表
+mangle表用于处理数据包。其和nat表的主要区别在于，nat表侧重连接而mangle表侧重每一个数据包。[5]其中内建链列表如下。
+
+PREROUTING
+OUTPUT
+FORWARD
+INPUT
+POSTROUTING
+============
+raw表
+raw表用于处理异常，有如下两个内建链：
+
+PREROUTING
+OUTPUT
+
+3. Rules
+根据报文header判断报文是否能通过关卡（链）
+
+https://zh.wikipedia.org/wiki/Iptables
+http://www.zsythink.net/archives/1199
+
+
+理解Docker容器端口映射：
+Before 1.7. docker-proxy + iptables DNAT的方式
+Bebin with 1.7 and later，提供完全由iptables DNAT实现的端口映射
+
+/usr/bin/docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8990 -container-ip 172.18.0.4 -container-port 8990
+
+
+问题：
 swarm
 compose
+
+
